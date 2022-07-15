@@ -62,7 +62,7 @@ export const DeleteButton = styled.span`
   cursor: pointer;
 
   transition: background-color 250ms linear, box-shadow 250ms linear;
-  :not(:last-child) &:hover,
+  &:hover,
   &:focus {
     background-color: ${colors.secondAccent};
   }
