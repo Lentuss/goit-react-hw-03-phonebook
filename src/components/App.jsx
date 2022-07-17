@@ -52,7 +52,7 @@ class App extends Component {
       <PhoneBook
         contacts={contacts}
         title={'Phonebook'}
-        filter={filter}
+        filterValue={filter}
         onSubmit={this.dataHandler}
         onFilter={this.handleFilter}
         onDelete={this.handleDelete}

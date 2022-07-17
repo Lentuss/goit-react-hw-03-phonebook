@@ -29,15 +29,15 @@ class ContactsList extends Component {
   };
 
   render() {
-    const { contacts, title, filter, onFilter, onDelete } = this.props;
+    const { contacts, title, filterValue, onFilter, onDelete } = this.props;
 
     const filteredContacts = contacts.filter(contact =>
-      contact.name.toLowerCase().includes(filter)
+      contact.name.toLowerCase().includes(filterValue)
     );
     return (
       <Contacts>
         <ListTitle>{title}</ListTitle>
-        <Filter filter={filter} onFilter={onFilter} />
+        <Filter filter={filterValue} onFilter={onFilter} />
 
         <List>
           {filteredContacts.map(contact => (
