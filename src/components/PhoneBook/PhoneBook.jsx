@@ -21,7 +21,7 @@ class PhoneBook extends Component {
   };
 
   render() {
-    const { title, onSubmit, contacts, filter, onFilter, onDelete } =
+    const { title, onSubmit, contacts, filterValue, onFilter, onDelete } =
       this.props;
     return (
       <BookContainer>
@@ -31,7 +31,7 @@ class PhoneBook extends Component {
         <ContactsList
           title={'Contacts'}
           contacts={contacts}
-          filter={filter}
+          filterValue={filterValue}
           onFilter={onFilter}
           onDelete={onDelete}
         />
