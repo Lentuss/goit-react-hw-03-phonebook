@@ -30,7 +30,7 @@ class ContactsList extends Component {
 
   render() {
     const { contacts, title, filterValue, onFilter, onDelete } = this.props;
-    console.log(filterValue);
+    console.log(contacts);
     const filteredContacts = contacts.filter(contact =>
       contact.name.toLowerCase().includes(filterValue)
     );

@@ -10,7 +10,6 @@ class Filter extends Component {
   };
   render() {
     const { filter, onFilter } = this.props;
-    console.log(filter);
     return (
       <FilterLabel>
         Find contacts by name
