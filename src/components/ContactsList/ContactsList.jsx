@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Filter from 'components/Filter';
+import Filter from '../Filter';
 
 import {
   Contacts,
